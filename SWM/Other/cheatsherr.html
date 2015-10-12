@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Cheat Sheet</title>
+<style>
+.container {width: 80%; margin: 0 auto; position: relative;}
+
+nav {
+	float: left;
+	width: 100%;
+	height: 100px;
+}
+
+.container {
+    width: 600px;
+}
+.box {
+    width: 100%;
+    height: 120px;
+    margin-left: 2.5%;
+    background: red;
+    float: left;
+    position: relative;
+}
+
+.wrap {
+    display: block;
+    width: 20%;
+    height: 120px;
+    float: left;
+    position: relative;
+}
+
+.hidebutton, .gonebutton, .blahbutton {
+	background: purple;
+	height: 50px;
+	width: 100px;
+	color: white;
+	float: left;
+	margin-right: 10px;
+}
+	
+
+.hide {
+	background: blue !important;
+}
+
+.gone {
+	background: green !important;
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script>
+$(document).ready (function () {
+    $('.hidebutton').click(function () {
+		$('.gone , .blah').hide("slide", { direction: "left" }, 500);
+        $('.gone , .blah').parent().hide(1500);
+		$('.hide').show("slide", { direction: "left" }, 1500);
+		$('.hide').parent().show("slide", { direction: "left" }, 500);
+    })
+	$('.gonebutton').click(function () {
+		$('.hide , .blah').hide("slide", { direction: "left" }, 500);
+        $('.hide , .blah').parent().hide(1500);
+		$('.gone').show("slide", { direction: "left" }, 1500);
+		$('.gone').parent().show("slide", { direction: "left" }, 500);
+    })
+	$('.blahbutton').click(function () {
+		$('.gone , .hide').hide("slide", { direction: "left" }, 500);
+        $('.gone , .hide').parent().hide(1500);
+		$('.blah').show("slide", { direction: "left" }, 1500);
+		$('.blah').parent().show("slide", { direction: "left" }, 500);
+    })
+});
+</script>
+</head>
+
+<body>
+
+<div class="container">
+	<nav>
+    <div class="hidebutton">hide</div>
+    <div class="gonebutton">gone</div>
+    <div class="blahbutton">blah</div>
+    </nav>
+  <div class="container">
+    <div class="wrap"><div class="box blah">1</div></div>
+    <div class="wrap"><div class="box hide">1</div></div>
+    <div class="wrap"><div class="box gone">1</div></div>
+    <div class="wrap"><div class="box blah">1</div></div>
+    <div class="wrap"><div class="box hide">1</div></div>
+    <div class="wrap"><div class="box blah">1</div></div>
+    <div class="wrap"><div class="box gone">1</div></div>
+    <div class="wrap"><div class="box blah">1</div></div>
+    <div class="wrap"><div class="box gone">1</div></div>
+    <div class="wrap"><div class="box hide">1</div></div>
+    <div class="wrap"><div class="box blah">1</div></div>
+    <div class="wrap"><div class="box blah">1</div></div>
+    <div class="wrap"><div class="box gone">1</div></div>
+    <div class="wrap"><div class="box blah">1</div></div>
+    <div class="wrap"><div class="box hide">1</div></div>
+    <div class="wrap"><div class="box blah">1</div></div>
+</div>
+</div>
+</body>
+</html>

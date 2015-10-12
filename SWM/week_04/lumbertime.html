@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="JS/jquery-2.1.4.min.js"></script>
+<script src="JS/jquery.stellar.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<link href='portfoliostyle.css' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Stop - Lumber Time</title>
+<script>
+$(document).ready(function() {
+	<!--- Couldn't get gallery items to square with css? --->
+	$('.gallery-item').height($('.gallery-item').width());
+	<!--- / --->
+	<!--- Stellar.js parallax initialize only on desktop sizes --->
+	if($(window).width() > 1024){
+		$("body").stellar();
+	}
+	<!--- / --->
+	<!--- making sure header section looks right on vertical mobile devices --->
+	if(window.innerHeight > window.innerWidth){
+    	$("header").css("height" , "50vh");
+	}
+	$( ".menu-button" ).on( "click", function() {
+  		$( this ).toggleClass( "active" );
+	});
+	<!--- / --->
+	<!--- Smooth scrolling for menu links --->
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			|| location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			   if (target.length) {
+				 $('html,body').animate({
+					 scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+	<!--- / --->
+	<!--- reversing about sections --->
+	if($(window).width() < 992){
+		$("#about2").insertBefore("#about");
+	}
+	<!--- / --->
+});
+</script>
+</head>
+
+<body id ="top">
+    <nav class="menu-button">
+    	<span></span>
+    	<ul>
+        	<a href="#top"><li> Home </li></a>
+            <a href="#about"><li> About </li></a>
+            <a href="#skillz"><li> Skillz </li></a>
+            <a href="#contact2"><li> Contact </li></a>
+    	</ul>
+    </nav>
+    
+    <header data-stellar-background-ratio=".5">
+        <div style="background-image: url(img/wood-01.svg); background-position: left; background-size: cover; height: 100%; width: 100%;"></div>
+    </header>
+    
+    <div class="center-container half" id="about">
+    	<div class="center">
+        	<h1> Lumbersexuals rejoice.</h1>
+            <h3> because I'm bringing sexy back. </h3>
+            <p>Crucifix distillery typewriter chia Intelligentsia. Fap whatever food truck four dollar toast. Keytar scenester paleo roof party. Before they sold out pour-over High Life selvage, crucifix Banksy vinyl. Shabby chic chillwave literally, messenger bag cray irony leggings skateboard roof party Williamsburg cold-pressed hella. 90's Pitchfork fap, art party ennui small batch master cleanse taxidermy cray pop-up bespoke. Kickstarter readymade lumbersexual, meh selvage drinking vinegar taxidermy Echo Park tote bag McSweeney's cronut raw denim.</p>
+    	</div>
+	</div>  
+          
+    <div class="half" id="about2">
+    	<span data-stellar-background-ratio=".5"> </span>     
+    </div>
+    
+	<section id="skillz" data-stellar-background-ratio=".5">
+    	<h1>So Rugged.</h1>
+		<h3> I have many skillz...</h3>
+		<div>
+        	<figure>
+            	<img src="img/axe-02.svg" />
+            	<figcaption> <h3>Wood Chopping </h3></figcaption>
+			</figure>
+            <figure>
+            	<img src="img/beard-02.svg" />
+            	<figcaption> <h3>Beard Growing </h3></figcaption>
+            </figure>
+            <figure>
+            	<img src="img/suspenders-02.svg" />
+            	<figcaption><h3> Suspender Wearing </h3></figcaption>
+        	</figure>
+    	</div>
+    </section>  
+      
+	<section id="wood">
+    	<h1> Look at all the wood I can cut.</h1>        
+        <div class="gallery-item center-container" style="background-image:url(img/wood1.jpg);">
+        	<div class="center">
+            	<h3>I've got stacks!</h3>
+        	</div>
+        </div>        
+        <div class="gallery-item center-container" style="background-image:url(img/wood5.jpg);">
+        	<div class="center">
+        		<h3>I've got twigs!</h3>
+    		</div>
+        </div>
+       	<div class="gallery-item center-container" style="background-image:url(img/wood6.jpg);">
+        	<div class="center">
+            	<h3>CHOPPED!</h3>
+        	</div>
+        </div>
+        <div class="gallery-item center-container" style="background-image:url(img/wood4.jpg);">
+       		<div class="center">
+            	<h3>I'll even cut old wood.</h3>
+        	</div>
+        </div>
+        <div class="gallery-item center-container" style="background-image:url(img/wood2.jpg);">
+        	<div class="center">
+            	<h3>Dem Floors.</h3>
+        	</div>
+        </div>
+        <div class="gallery-item center-container" style="background-image:url(img/wood7.jpg);">
+        	<div class="center">
+            	<h3>I'll turn you're shit to shavings.</h3>
+        	</div>
+        </div>
+		<div class="gallery-item center-container" style="background-image:url(img/wood3.jpg);">
+         	<div class="center">
+            	<h3>Grains R Great.</h3>
+         	</div>
+        </div>
+		<div class="gallery-item center-container" style="background-image:url(img/wood8.jpg);">
+        	<div class="center">
+				<h3>Burly like myself.</h3>
+			</div>
+		</div>
+		<div class="gallery-item center-container" style="background-image:url(img/wood9.jpg);">
+        	<div class="center">
+            	<h3>Bark. </h3>
+        	</div>
+		</div> 
+    </section> 
+       
+	<section id="contact1">
+    	<div data-stellar-background-ratio="1" data-stellar-vertical-offset="250" style="background-image:url(img/trees3.jpg);"></div>
+        <div data-stellar-background-ratio="1.25" data-stellar-vertical-offset="250" style="background-image:url(img/trees2.png);"></div>
+        <div data-stellar-background-ratio="1.5" data-stellar-vertical-offset="250" style="background-image:url(img/trees1.png);"></div>
+    </section>   
+         
+	<footer id="contact2" class="center-container">
+        <div class="center">
+        	<h3> Find Me At... </h3>
+            <p> 1234 BurlyMan Rd. <br /> Login Cabin Lake, MI, 40056 <br /> 1-800-GET-JACK  </p>
+        </div>        
+	</footer>        
+        
+</body>
+</html>

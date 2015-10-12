@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Cheat Sheet</title>
+<style>
+body {
+	margin: 0;
+}
+.container {width: 80%; margin: 0 auto; position: relative;}
+
+nav {
+	float: left;
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	text-align: center;
+	background: #9da9aa;
+	margin-bottom: 50px;
+	display:table;
+	height: 150px;
+}
+
+.navcontainer {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+	margin: 0 auto;
+}
+.box {
+    background:#e0eff0;
+    position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #9da9aa;
+	border-radius: 5px;
+	color: #7f8e90;
+	-webkit-transition: background .5s, color .5s; /* Safari */
+    transition: background .5s, color .5s;
+	font-family: verdana, sans-serif;
+}
+
+.box:hover {
+	color: #5a6668;
+	background:#f5fafa;
+}
+
+.button {
+    position: relative;
+	width: 15%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	-webkit-transition: background .5s, color .5s; /* Safari */
+    transition: background .5s, color .5s;
+	font-family: verdana, sans-serif;
+	float: left;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.wrap {
+	display: table;
+	position: relative;
+	width: inherit;
+	height: 35px;
+    float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	
+
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+$(document).ready (function () {
+    $('.helpersbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.helpers').parent().delay(500).fadeIn(500);
+    })
+	$('.declarationsbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.declarations').parent().delay(500).fadeIn(500);
+    })
+	$('.nonbodybutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.nonbody').parent().delay(500).fadeIn(500);
+    })
+	$('.essentialsbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.essentials').parent().delay(500).fadeIn(500);
+    })
+	$('.linksbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.links').parent().delay(500).fadeIn(500);
+    })
+	$('.stylingbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.styling').parent().delay(500).fadeIn(500);
+    })
+	$('.definingbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.defining').parent().delay(500).fadeIn(500);
+    })
+	$('.emptybutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.empty').parent().delay(500).fadeIn(500);
+    })
+	$('.layoutbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.layout').parent().delay(500).fadeIn(500);
+    })
+	$('.dependantbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.dependant').parent().delay(500).fadeIn(500);
+    })
+	$('.listsbutton').click(function () {
+		$('.box').parent().fadeOut(500);
+		$('.lists').parent().delay(500).fadeIn(500);
+    })
+	$('.allbutton').click(function () {
+		$('.box').parent().fadeIn(500);
+    })
+});
+</script>
+</head>
+
+<body>
+
+	<nav>
+    	<div class="navcontainer">
+            <div class="button allbutton">All</div>
+            <div class="button layoutbutton">Layout</div>
+            <div class="button essentialsbutton">Essentials</div>
+            <div class="button listsbutton">Lists</div>
+            <div class="button dependantbutton">Dependant</div>
+            <div class="button emptybutton">Empty</div>
+            <div class="button definingbutton">Defining</div>
+            <div class="button stylingbutton">Styling</div>
+            <div class="button linksbutton">Links</div>
+            <div class="button nonbodybutton">Non-Body</div>
+            <div class="button declarationsbutton">Declarations</div>
+            <div class="button helpersbutton">Helpers</div>
+    	</div>
+    </nav>
+  <div class="container">
+    <a href="http://www.w3schools.com/html/html_comments.asp">
+    	<div class="wrap">
+        	<div class="box helpers">&lt;!-- comment --&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_doctype.asp">
+    	<div class="wrap">
+        	<div class="box declarations nonbody">&lt;!DOCTYPE&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_a.asp">
+    	<div class="wrap">
+        	<div class="box essentials links">&lt;a&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_abbr.asp">
+    	<div class="wrap">
+        	<div class="box styling browserhelp">&lt;abbr&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_address.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;address&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_article.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;article&gt;</div>
+        </div>
+    </a>
+   <a href="http://www.w3schools.com/tags/tag_aside.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;aside&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_audio.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;audio&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_b.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;b&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_br.asp">
+    	<div class="wrap">
+        	<div class="box styling empty essentials">&lt;br/&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_button.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;button&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_canvas.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;canvas&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_caption.asp">
+    	<div class="wrap">
+        	<div class="box defining styling">&lt;caption&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_cite.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;cite&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_code.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;code&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_col.asp">
+    	<div class="wrap">
+        	<div class="box layout dependant">&lt;col&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_colgroup.asp">
+    	<div class="wrap">
+        	<div class="box layout dependant">&lt;colgroup&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_dd.asp">
+    	<div class="wrap">
+        	<div class="box dependant lists">&lt;dd&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_del.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;del&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_details.asp">
+    	<div class="wrap">
+        	<div class="box defining styling layout">&lt;details&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_dfn.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;dfn&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_div.asp">
+    	<div class="wrap">
+        	<div class="box layout essentials">&lt;div&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_dl.asp">
+    	<div class="wrap">
+        	<div class="box lists dependant">&lt;dl&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_dt.asp">
+    	<div class="wrap">
+        	<div class="box lists dependant">&lt;dt&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_em.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;em&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_fieldset.asp">
+    	<div class="wrap">
+        	<div class="box styling layout defining">&lt;fieldset&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_figcaption.asp">
+    	<div class="wrap">
+        	<div class="box defining layout dependant">&lt;figcaption&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_figure.asp">
+    	<div class="wrap">
+        	<div class="box layout defining">&lt;figure&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_footer.asp">
+    	<div class="wrap">
+        	<div class="box essentials layout">&lt;footer&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_form.asp">
+    	<div class="wrap">
+        	<div class="box dependant essentials">&lt;form&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_h1.asp">
+    	<div class="wrap">
+        	<div class="box styling essentials">&lt;h1&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_h2.asp">
+    	<div class="wrap">
+        	<div class="box styling essentials">&lt;h2&gt;</div>
+        </div>
+    </a>
+    <a href="hhttp://www.w3schools.com/tags/tag_h3.asp">
+    	<div class="wrap">
+        	<div class="box styling essentials">&lt;h3&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_h4.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;h4&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_h5.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;h5&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_h6.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;h6&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_head.asp">
+    	<div class="wrap">
+        	<div class="box nonbody essentials">&lt;head&gt;</div>
+        </div>
+    </a>
+   <a href="http://www.w3schools.com/tags/tag_header.asp">
+    	<div class="wrap">
+        	<div class="box layout essentials">&lt;header&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_hr.asp">
+    	<div class="wrap">
+        	<div class="box styling layout empty">&lt;hr/&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_html.asp">
+    	<div class="wrap">
+        	<div class="box nonbody essentials">&lt;html&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_i.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;i&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_iframe.asp">
+    	<div class="wrap">
+        	<div class="box layout">&lt;iframe&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_img.asp">
+    	<div class="wrap">
+        	<div class="box styling layout esssentials empty">&lt;img/&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_input.asp">
+    	<div class="wrap">
+        	<div class="box dependant empty essentials">&lt;input/&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_ins.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;ins&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_label.asp">
+    	<div class="wrap">
+        	<div class="box dependant essentials">&lt;label&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_legend.asp">
+    	<div class="wrap">
+        	<div class="box dependant">&lt;legend&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_li.asp">
+    	<div class="wrap">
+        	<div class="box essentials layout lists">&lt;li&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_link.asp">
+    	<div class="wrap">
+        	<div class="box nonbody essentials links">&lt;link&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_mark.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;mark&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_meta.asp">
+    	<div class="wrap">
+        	<div class="box nonbody essentials empty">&lt;meta/&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_meter.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;meter&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_nav.asp">
+    	<div class="wrap">
+        	<div class="box layout essentials">&lt;nav&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_noscript.asp">
+    	<div class="wrap">
+        	<div class="box nonbody defining">&lt;noscript&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_ol.asp">
+    	<div class="wrap">
+        	<div class="box layout lists essentials">&lt;ol&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_optgroup.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;optgroup&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_option.asp">
+    	<div class="wrap">
+        	<div class="box dependant defining">&lt;option&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_p.asp">
+    	<div class="wrap">
+        	<div class="box layout styling essentials">&lt;p&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_pre.asp">
+    	<div class="wrap">
+        	<div class="box styling defining">&lt;pre&gt;</div>
+        </div>
+    </a>
+    <a href="hhttp://www.w3schools.com/tags/tag_progress.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;progress&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_q.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;q&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_script.asp">
+    	<div class="wrap">
+        	<div class="box defining nonbody links">&lt;script&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_section.asp">
+    	<div class="wrap">
+        	<div class="box defining layout">&lt;section&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_source.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;source&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_select.asp">
+    	<div class="wrap">
+        	<div class="box dependant layout">&lt;select&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_span.asp">
+    	<div class="wrap">
+        	<div class="box layout essentials">&lt;span&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_strong.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;strong&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_style.asp">
+    	<div class="wrap">
+        	<div class="box nonbody essentials">&lt;style&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_sub.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;sub&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_summary.asp">
+    	<div class="wrap">
+        	<div class="box dependant styling">&lt;summary&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_sup.asp">
+    	<div class="wrap">
+        	<div class="box styling">&lt;sup&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_table.asp">
+    	<div class="wrap">
+        	<div class="box layout dependant essentials">&lt;table&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_tbody.asp">
+    	<div class="wrap">
+        	<div class="box layout dependant essentials">&lt;tbody&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_td.asp">
+    	<div class="wrap">
+        	<div class="box dependant essentials layout">&lt;td&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_textarea.asp">
+    	<div class="wrap">
+        	<div class="box layout styling">&lt;textarea&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_tfoot.asp">
+		<div class="wrap">
+        	<div class="box dependant layout essentials">&lt;tfoot&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_th.asp">
+    	<div class="wrap">
+        	<div class="box essentials layout dependant">&lt;th&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_thead.asp">
+    	<div class="wrap">
+        	<div class="box essentials layout dependant">&lt;thead&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_time.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;time&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_title.asp">
+    	<div class="wrap">
+        	<div class="box nonbody essentials">&lt;title&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_tr.asp">
+    	<div class="wrap">
+        	<div class="box essentials layout dependant">&lt;tr&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_track.asp">
+    	<div class="wrap">
+        	<div class="box styling dependant defining">&lt;track&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_ul.asp">
+    	<div class="wrap">
+        	<div class="box lists essentials dependant">&lt;ul&gt;</div>
+        </div>
+    </a>
+    <a href="http://www.w3schools.com/tags/tag_video.asp">
+    	<div class="wrap">
+        	<div class="box defining">&lt;video&gt;</div>
+        </div>
+    </a>
+</div>
+</body>
+</html>

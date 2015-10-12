@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	var parentPadding = parseInt(jQuery('.box').parent().css("padding"))
+	$('.box').each(function(i) {
+		$(this).css('padding', parentPadding + i);
+	});
+	$(".box").each(function() {
+        var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
+         $(this).css("background-color", hue);
+    });
+	
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Nested Divs!</title>
+
+<style>
+body {
+	margin: 0;
+	padding: 5px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="box"> 
+    <div class="box"> 
+        <div class="box"> 
+            <div class="box"> 
+                <div class="box"> 
+                    <div class="box"> 
+                        <div class="box"> 
+                            <div class="box"> 
+                                <div class="box"> 
+                                    <div class="box"> 
+                                        <div class="box"> 
+                                            <div class="box"> 
+                                                <div class="box"> 
+                                                    <div class="box"> 
+                                                        <div class="box"> 
+                                                            <div class="box"> 
+                                                                <div class="box"> 
+                                                                    <div class="box"> 
+                                                                        <div class="box"> 
+                                                                            <div class="box"> 
+                                                                                <div class="box"> 
+                                                                                    <div class="box"> 
+                                                                                        <div class="box"> 
+                                                                                            <div class="box"> 
+                                                                                                <div class="box"> </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">console.log(document.getElementsByTagName('div').length + ' divs');</script>
+</body>
+</html>

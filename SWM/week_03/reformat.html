@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Courses - Columbia College Chicago - Acalog ACMS™</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+body {
+	position: relative;
+	font-family: Arial, sans-serif;
+	width: 100vw;
+}
+
+
+li {
+	list-style: none;
+	text-align: center;
+	padding: 10px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: green;
+}
+
+header, footer, .contain, .colorblock {
+	width: 60%;
+	padding: 0 20%;
+}
+
+section, header section, nobr {
+	width: 100%;
+}
+
+nav {
+	width: 20%;
+	padding: 2.5%;
+}
+
+.contain section {
+	width: 70%;
+	padding-left: 5%;
+}
+
+header h1 {
+	float: right;
+}
+
+section, footer, header img, header section, header section ul li, footer ul li, .contain,  nav, nav ul, .contain section, nobr, .colorblock li {
+	float: left;
+}
+
+.contain section ul, .contain section ul li {
+	-webkit-padding-start: 40px;
+	list-style: circle;
+	text-decoration: underline;
+}
+
+.contain section form, .contain section ul, .colorblock, footer {
+		margin-top: 20px;
+}
+
+.contain li, .colorblock li, .contain section ul{
+	text-align: left;
+}
+
+.colorblock, .colorblock a, .colorblock a:hover {
+	background: #333;
+	color: white;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+nav, .contain section form {
+	background-color: #CCC;
+}
+	 
+
+</style>
+</head>
+<body>
+
+<!-- START HEADER -->
+	<header>
+            <a href="http://www.colum.edu/index.html"><img alt="Columbia College Chicago" src="http://www.colum.edu/frequencytv/images/logo.png"></a>
+            <h1>
+                Course Catalog
+            </h1>
+    </header>
+        <section class="colorblock">
+                    <ul>
+                        <li>
+                            <a href="http://www.colum.edu/">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://catalog.colum.edu/">Course Catalog</a>
+                        </li>
+                        <li>
+                            <a href="http://catalog.colum.edu/">Courses</a>
+                        </li>
+                    </ul>
+        </section>
+<!-- END HEADER -->
+<!-- START SIDEBAR NAVIGATION -->   
+<div class="contain" style="margin-top: 20px;">    
+     <nav>
+    	<form name="n2_search" method="get" action="/search_advanced.php" onSubmit="return validateSearchOptions()">
+        	<h3>Catalog Search </h3>
+			<input type="text" title="Keyword" name="filter[keyword]" value="Enter Keyword" size="15" maxlength="150" id="keyword" onFocus="if (this.value == 'Enter Keyword  ') { this.value=''; }" tabIndex="101">
+			<input type="submit" title="GO" value="GO" tabindex="103" value="Search">
+		  	<a href="/search_advanced.php?catoid=7" class="navbar" tabIndex="104"><nobr>Advanced Search</nobr></a>
+	  	</form>
+            	<ul>
+			  		<li><a href="/index.php?catoid=7">Catalog Home</a></li>
+					<li><a href="/content.php?catoid=7&navoid=1821">Academic Calendar</a></li>
+					<li><a href="/content.php?catoid=7&navoid=1813">Academic Policies</a></li>
+					<li><a href="/content.php?catoid=7&navoid=1807">Courses</a></li>
+					<li><a href="/content.php?catoid=7&navoid=1819">Majors &amp; Programs</a></li>
+					<li><a href="/content.php?catoid=7&navoid=1812">Programs &amp; Courses by Department</a></li>
+					<li><a href="/content.php?catoid=7&navoid=1820">Requirements for Undergraduate Admission</a></li>
+					<li><a href="/content.php?catoid=7&navoid=1817">Requirements for Graduate Admission</a></li>
+					<li><a href='http://www.colum.edu/academics/special-programs/index.html'>Special Programs</a></li>
+					<li><a href='http://www.colum.edu/learningstudio'>Learning Studio</a></li>
+					<li><a href='http://www.colum.edu/handbook'>Student Handbook</a></li>
+					<li><a href='http://www.colum.edu/sfs'>Student Financial Services</a></li>
+                     <li><a href="/portfolio_nopop.php?catoid=7">My Favorites</a></li>
+				</ul>
+            <ul>
+            	<!---- what drunk person made all four sprites in the same png file and then sliced it up with CSS? ---->
+                <li>
+                	<img src="pathtoemailsprite">
+                    <a href="mailto:?subject=Columbia%20College%20Chicago%20Link&amp;body=Link:%20http://catalog.colum.edu/" >Email This Page</a>
+                </li>
+                <li>
+                	<img src="pathtocatalogsprite">
+                	<a target="_blank" href="http://catalog.colum.edu/help.php?catoid=6">Catalog Help</a>
+                </li>
+                <li>
+                	<img src="pathtotopsprite">
+                	<a title="Back To Top" href="#top">Back To Top</a>
+                </li>
+                <li>
+                	<img src="pathtoprintsprite">
+                	<a href="#">Print this Page</a>
+                </li>
+            </ul>
+    </nav>
+<!-- END SIDEBAR NAVIGATION -->
+<!-- START MAIN BODY -->
+	<section>	
+        <form name="select_catalog" method="post" action="/index.php" style="background-color: white; float: right;">
+            <select tabIndex="201" name="catalog" title="Select a Catalog">										
+                <option value="7" selected>2015-2016 Course Catalog</option>
+                <option value="6" >2014-2015 Course Catalog [ARCHIVED CATALOG]</option>
+                <option value="5" >2013-2014 Course Catalog [ARCHIVED CATALOG]</option>
+                <option value="4" >2012-2013 Course Catalog [ARCHIVED CATALOG]</option>
+                <option value="3" >2011-2012 Course Catalog [ARCHIVED CATALOG]</option>
+                <option value="1" >2010-2011 Undergraduate Course Catalog [ARCHIVED CATALOG]</option>
+            </select>
+            <input type="submit" title="Select a Catalog" name="sel_cat_submit" value="GO" tabIndex="202">
+		</form>
+		
+		<h2> Courses </h2>
+		<a href="content.php?catoid=7&navoid=1708" target="_blank">Course Numbering</a>
+
+        <form action="/content.php?catoid=7&navoid=1807#acalog_template_course_filter" method="get" name="course_search" id="course_search" class="acalog-highlight-ignore" >
+        <table>
+        	<tr>
+            	<th>Course Filter</th>
+            </tr>
+            <tr>
+            	<td colspan="4">Filter this list of courses using course prefix, course code, keywords or any combination.</td>
+            </tr>
+            <tr valign="top">
+                <td colspan="1">Prefix:</td>
+                <td colspan="1">Code or Number:</td>
+                <td colspan="1">Type</td>
+                <td colspan="1">Keyword or Phrase:</td>
+            </tr>
+			<tr>
+		    	<td colspan="1">
+                    <select name="filter[27]" tabindex="1" title="Choose a Course Prefix">
+                        <option value="-1">All prefixes&#8230;</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="43">43</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="56">56</option>
+                        <option value="59">59</option>
+                        <option value="66">66</option>
+                        <option value="70">70</option>
+                        <option value="74">74</option>
+                        <option value="75">75</option>
+            		</select>
+		    	</td>
+				<td colspan="1">
+            		<input type="text" title="Course Number" style="width: 80px;" name="filter[29]" value="" tabindex="2">
+           		</td>
+                <td colspan="1">
+                    <select name="filter[course_type]" style="width: 100px;" tabIndex="3" title="Choose a Course Type">
+                        <option value="-1">All types&#8230;</option>
+                        <option value="251">Advertising and Public Relations</option>
+                        <option value="236">American Sign Language</option>
+                        <option value="266">Art and Art History</option>
+                        <option value="237">Audio Arts and Acoustics</option>
+                        <option value="235">Business and Entrepreneurship</option>
+                        <option value="245">Cinema Art + Science</option>
+                        <option value="240">Creative Arts Therapies</option>
+                        <option value="244">Creative Writing</option>
+                        <option value="238">Cultural Studies</option>
+                        <option value="239">Dance</option>
+                        <option value="265">Design</option>
+                        <option value="241">Education</option>
+                        <option value="242">English</option>
+                        <option value="243">Fashion Studies</option>
+                        <option value="268">First-Semester Experince</option>
+                        <option value="259">Foreign Languages</option>
+                        <option value="261">History</option>
+                        <option value="262">Humanities</option>
+                        <option value="248">Interactive Arts and Media</option>
+                        <option value="250">Journalism</option>
+                        <option value="252">Music</option>
+                        <option value="253">Photography</option>
+                        <option value="254">Radio</option>
+                        <option value="256">Science and Mathematics</option>
+                        <option value="247">Social Science</option>
+                        <option value="257">Television</option>
+                        <option value="258">Theatre</option>
+                    </select>
+                </td>
+				<td colspan="1">
+            		<input type="text" title="Keyword" name="filter[keyword]" size="30" maxlength="150" value="" style="width: 200px;" tabindex="4">
+            	</td>
+			</tr>
+			<tr>
+                <td colspan="4">
+                    <input type="checkbox" title="Exact Match" name="filter[exact_match]" id="exact_match" value="1"  tabindex="11">
+                    <label for="exact_match">Find whole word or phrase only.</label>
+                </td>
+			</tr>
+		</table>
+		</form>
+
+		<ul>
+        	<li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36021" target="_blank">21-1040 Ceramics I</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36022" target="_blank">21-1042 Jewelry and Objects I</a>
+			</li>
+			<li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36023" target="_blank">21-1310 Survey of Typography</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36024" target="_blank">21-1320 Design Lab</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36025" target="_blank">21-1330 Information Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36026" target="_blank">21-1390 Special Issues in Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36027" target="_blank">21-1490 Special Issues in Illustration</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36028" target="_blank">21-1491 Illustration: Drawing to Print</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36029" target="_blank">21-1590 Special Issues in Advertising</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36030" target="_blank">21-1801 Contemporary Practice: InArch</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36031" target="_blank">21-1811 Architectural Draft &amp; Detailing</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36032" target="_blank">21-1813 AutoCad Fundamentals</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36033" target="_blank">21-1814 Manual Drafting</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36034" target="_blank">21-1819 Sources and Materials</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36035" target="_blank">21-1840 Digital Media for InArch I</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36036" target="_blank">21-2043 Jewelry and Objects II</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36037" target="_blank">21-2330 Graphic Design I: Form and Structure</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36038" target="_blank">21-2331 Graphic Design for Photography Majors</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36039" target="_blank">21-2375 Website Design I</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36040" target="_blank">21-2400 Illustration History &amp; Practice</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36041" target="_blank">21-2410 Figure Drawing and Color</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36042" target="_blank">21-2414 Figure Drawing</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36043" target="_blank">21-2415 Illustration Studio</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36044" target="_blank">21-2420 Applied Drawing</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36045" target="_blank">21-2430 Illustration: Experimental Techniques</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36046" target="_blank">21-2510 Advertising Art Direction: Introduction</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36047" target="_blank">21-2520 Advertising Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36048" target="_blank">21-2611 Integrated Design Studio</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36049" target="_blank">21-2612 Intro to Visual Design Studies</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36050" target="_blank">21-2725 Interaction Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36051" target="_blank">21-2735 Technical Illustration</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36052" target="_blank">21-2740 Toy Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36053" target="_blank">21-2745 Exhibition Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36054" target="_blank">21-2750 3D NURBS Modeling</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36055" target="_blank">21-2801 Design Studio II</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36056" target="_blank">21-2805 Design History: Spaces + Objects</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36057" target="_blank">21-2806 Human Dimension in InArch</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36058" target="_blank">21-2810 Lighting for InArch</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36059" target="_blank">21-2811 Textiles for InArch</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36060" target="_blank">21-2815 Building Codes for InArch</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36061" target="_blank">21-2840 Digital Media for InArch II</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36062" target="_blank">21-2841 Digital Media for InArch III</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36063" target="_blank">21-2850 Construction Documents I</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36064" target="_blank">21-2890 InArch: Introductory Studio</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36065" target="_blank">21-2901 Special Topics in Design:</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36150" target="_blank">21-2901LDM Special Topics in Art and Design Practice: Florence, Italy</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36066" target="_blank">21-2936 Moldmaking and Casting</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36067" target="_blank">21-2941 Ceramics II</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36068" target="_blank">21-2944 Furniture Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36069" target="_blank">21-2946 Furniture Construction</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36070" target="_blank">21-2961 Metal Fabrication</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36071" target="_blank">21-3340 Typography for Graphic Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36072" target="_blank">21-3345 Publication Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36073" target="_blank">21-3347 Book Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36074" target="_blank">21-3350 Graphic Design II:Semiotics and Form</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36075" target="_blank">21-3355 Branding Identity</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36076" target="_blank">21-3358 Graphic Design III: Visual Identity and Narrative</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36077" target="_blank">21-3360 Packaging Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36078" target="_blank">21-3370 Experimental Typography</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36079" target="_blank">21-3372 Graphic Design IV: Narrative and Research Studio</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36080" target="_blank">21-3376 Website Design II</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36081" target="_blank">21-3378 Design Lab II</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36082" target="_blank">21-3380 Graphic Design V: Branded Environments</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36083" target="_blank">21-3381 Intro to Web Content Management</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36084" target="_blank">21-3385 Professional Portfolio Development</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36085" target="_blank">21-3420 BFA Review in Illustration</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36086" target="_blank">21-3424 Drawing the Graphic Novel</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36087" target="_blank">21-3430 Figure Illustration</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36088" target="_blank">21-3432 Children&#039;s Book Illustration</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36089" target="_blank">21-3435 Cartooning</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36090" target="_blank">21-3447 Illustration: Motion</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36091" target="_blank">21-3448 Illustration Portfolio</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36092" target="_blank">21-3460 Digital Illustration</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36093" target="_blank">21-3465 Illustration: Sequence</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36094" target="_blank">21-3475 History of Political and Social Illustration</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36095" target="_blank">21-3482 Editorial Illustration</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36096" target="_blank">21-3485 Illustration for Film and Animation</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36097" target="_blank">21-3500 Art Director/Commercial Photographer</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36098" target="_blank">21-3525 Art Director/Copywriter Team</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36099" target="_blank">21-3530 Photo Communication</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36100" target="_blank">21-3535 Storyboard Development</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36101" target="_blank">21-3540 Creative Strategies in Art Direction I</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36102" target="_blank">21-3542 Creative Strategies in Art Direction II</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36103" target="_blank">21-3550 Advertising Communication</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36104" target="_blank">21-3584 Management for Designers</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36105" target="_blank">21-3700 Product Design IV: Design Research</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36106" target="_blank">21-3710 Product Design V: Client Project</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36107" target="_blank">21-3715 Digital Presentation Techniques</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36108" target="_blank">21-3720 Manufacturing for Product Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36109" target="_blank">21-3740 Product Design Thesis I</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36110" target="_blank">21-3741 Product Design Thesis II</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36111" target="_blank">21-3750 Product Design Professional Business Practices</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36112" target="_blank">21-3801 Construction Methods for InArch</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36113" target="_blank">21-3802 Research Methods for InArch</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36114" target="_blank">21-3803 Design Studio III: Code Compliance</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36115" target="_blank">21-3804 Design Studio IV: Adaptive Reuse</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36116" target="_blank">21-3805 Design Studio V: Global Issues</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36117" target="_blank">21-3806 Senior Project A: Research and Programming</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36118" target="_blank">21-3807 Senior Project B: Schematic Design</a>
+			</li>
+            <li>
+            	<a href="preview_course_nopop.php?catoid=7&coid=36119" target="_blank">21-3808 Senior Project C: Design Development</a>
+			</li>
+		</ul>
+	</section>
+</div>
+<!-- START FOOTER -->   
+<section class="colorblock">
+        <p>
+            Every effort is made to ensure the accuracy of the information contained in this Columbia College Chicago Catalog; however, the Catalog is not a contract but rather a guide for the convenience of students. Columbia College Chicago reserves the right to change or withdraw courses; to change the fees, rules, and calendar for admission, registration, instruction, and graduation; and to change any of its policies or other provisions listed in the Catalog at any time.
+        </p>
+</section>
+<footer>
+	<ul>
+                    <li>
+                        <a href="http://dev.colum.edu/academics/acalog.html">Site Map</a>
+                    </li>
+                    <li>
+                        <a href="http://dev.colum.edu/academics/acalog.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="http://dev.colum.edu/academics/acalog.html">Visit Us</a>
+                    </li>
+                    <li>
+                        <a href="http://dev.colum.edu/academics/acalog.html">Directory</a>
+                    </li>
+                    <li>
+                        <a href="http://dev.colum.edu/academics/acalog.html">About Columbia</a>
+                    </li>
+    	</ul>
+                
+	<nobr>All <a href="/misc/catalog_list.php?catoid=7" class="footer"  tabIndex="300">catalogs</a> &#169; 2015 Columbia College Chicago.</nobr> <nobr>Powered by the <a href="http://www.acalog.com" target="_blank" class="footer">Acalog™ Academic Catalog Management System™ (ACMS™)</a>.</nobr>
+	<br />
+	<nobr><a href="http://mobilecatalog.colum.edu/index.php?theme" onclick="showMobile();" class="footer">Mobile Site</a>.</nobr>
+<!-- END FOOTER -->   
+</body>
+</html>
