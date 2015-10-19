@@ -1,32 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<script src="JS/jquery-2.1.4.min.js"></script>
-<script src="JS/jquery.stellar.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-<link href='portfoliostyle.css' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="JS/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="JS/jquery.stellar.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css' />
+<link href='portfoliostyle.css' rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Stop - Lumber Time</title>
-<script>
+<script type="text/javascript">
 $(document).ready(function() {
-	<!--- Couldn't get gallery items to square with css? --->
+	<!--- Couldn't get gallery items to square with css? -->
 	$('.gallery-item').height($('.gallery-item').width());
-	<!--- / --->
-	<!--- Stellar.js parallax initialize only on desktop sizes --->
+	<!--- / -->
+	<!--- Stellar.js parallax initialize only on desktop sizes -->
 	if($(window).width() > 1024){
 		$("body").stellar();
 	}
-	<!--- / --->
-	<!--- making sure header section looks right on vertical mobile devices --->
+	<!--- / -->
+	<!--- making sure header section looks right on vertical mobile devices -->
 	if(window.innerHeight > window.innerWidth){
     	$("header").css("height" , "50vh");
 	}
 	$( ".menu-button" ).on( "click", function() {
   		$( this ).toggleClass( "active" );
 	});
-	<!--- / --->
-	<!--- Smooth scrolling for menu links --->
+	<!--- / -->
+	<!--- Smooth scrolling for menu links -->
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 			|| location.hostname == this.hostname) {
@@ -40,12 +40,12 @@ $(document).ready(function() {
 			}
 		}
 	});
-	<!--- / --->
-	<!--- reversing about sections --->
+	<!--- / -->
+	<!--- reversing about sections -->
 	if($(window).width() < 992){
 		$("#about2").insertBefore("#about");
 	}
-	<!--- / --->
+	<!--- / -->
 });
 </script>
 </head>
