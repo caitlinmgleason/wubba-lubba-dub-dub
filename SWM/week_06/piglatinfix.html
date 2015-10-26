@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<label>What dialect of Pig Latin?
+        <select id="dialect">
+            <option value="classic">Classic</option>
+            <option value="lancashire">Lancashire</option>
+        </select>
+        </label>
+    <label>What would you like to Translate?
+            <input id="translate" type="text">
+    </label>
+    <button id="button" type="button">Make it pig latin!</button>
+    <div id="output"></div>
+
+<script>
+//get button
+var translateButton = document.getElementById("button");
+var dialect = document.getElementById("dialect").value;
+//button action
+var translateFunction = function () {
+	var word = document.getElementById("translate").value;
+	
+		//split input string into separate words
+		var wordSplit = word.split(" ");
+		
+		
+		for (var i = 0; i < wordSplit.length; i++) {
+			
+			//identify first letter
+			var firstLetter = wordSplit[i].charAt(0);
+			
+			//identify last letter
+			var lastLetter = wordSplit[i].charAt(wordSplit[i].length-1);
+			
+			//pig latin for words starting with vowels 
+			if (["a","A","e","E","i","I","o","O","u","U"].indexOf(firstLetter) > -1) { 
+			//uppercase breaks it, so have to add to array, found this equals array fix on stackoverflow
+				
+				//is this a good way to do this? It's the only way I could get it to work, but it ends up making the code longer...
+				//and very reptititive. 
+				var vowel = wordSplit[i] + "yay ";
+				var	result = vowel; //is this a good way to do this? It's the only way I could get it to work, but it ends up making the code longer...
+				
+				//if i could just have result possibly equal two values, then I could have adding the capitalize and punctiation after if/then???
+				//removes punctiation (if present) and moves to the end of word
+				if (lastLetter == "?" || lastLetter == "." || lastLetter == "!") {
+				
+					var result = wordSplit[i].substring(0, wordSplit[i].length - 1) + "yay" + lastLetter + " ";
+				
+				}
+			}
+			
+			//pig latin for words starting with consonents 
+			else  {
+				
+				var resultLetter = wordSplit[i].charAt(1);
+				//makes first letter of new word uppcase if input is capitalized.
+				if (firstLetter == firstLetter.toUpperCase()) {
+					var resultLetter = resultLetter.toUpperCase();
+					//alert (resultLetter);
+				}
+				
+				var consonent = resultLetter + (wordSplit[i].substr(2)) + firstLetter.toLowerCase() + "ay ";
+				var result = consonent;
+				
+				if (lastLetter == "?" || lastLetter == "." || lastLetter == "!") {
+				
+					var result = resultLetter + wordSplit[i].substring(2, wordSplit[i].length - 1) + firstLetter.toLowerCase() + "ay" + lastLetter + " ";
+				
+				}
+			}
+			
+			document.getElementById("output").textContent += result;
+		}
+};
+
+var lancashireFunction = function () {
+	var letterSplit = word.split("");
+		
+		for (var i = 0; i < letterSplit.length; i++) {
+			if (["a","A","e","E","i","I","o","O","u","U"].indexOf(letterSplit) > -1) {
+				"ag" + letterSplit[i];
+			}
+		}	
+};
+
+button.addEventListener("click", translateFunction);
+	
+</script>
+</body>
+</html>

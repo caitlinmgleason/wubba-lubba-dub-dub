@@ -1,0 +1,24 @@
+Caitlin Gleason
+Scripting for Web and Mobile
+Challenge
+
+
+	For me web development is part of design but on the next level. Interacting with a webpage is like getting feedback from the design itself, and goes beyond the capabilities of a static print layout. I’m sure a lot of people in design have compared building a program to building a person, and that’s what it feels like. You are literally encoding the personality and reactions of the page yourself, and despite the fact that web design/development is one of the most intangible mediums out there, I still find it extremely rewarding. I love the feeling of solving the problem. That’s what’s fun about learning new programming languages, you’re figuring it out all over again, new ways to do things, faster methods etc. I’ve been thinking recently pursuing Wordpress theme development, and to do any web-based development you obviously need to know JavaScript.  Anyways, the reason I want to learn JavaScript is because it is what brings the page to life. 
+
+	Right now the most trouble I am having is time. I could code for hours and hours, but unfortunately I’m a little crazed this semester. This is obviously not any fault of yours. I don’t think the workload is unreasonable. Mostly my own schedule is unreasonably, for which I take full responsibility.
+
+	I don’t think the workload is the problem, though I think there are some issues in the classroom that I have seen other students struggling with. Obviously we’re all on very different pages in this class, and I would suggest in the future some kind of HTML/CSS course be assigned as a prerequisite. I know a lot of people came in with little to now knowledge of coding for the web. Herein lies the problem, the class doesn’t have a programming prerequisite, yet we are expected to know all this stuff already. Coming from the design department, I’m not really sure how IAM and Design are handling this, but perhaps there could be more communication between the two since they both teach similar classes on this subject? I also would like a little more explanation of syntax in class, though I’m sure this has a bit to do with preexisting knowledge as well. I was hoping that as you go through lines of code you could explain in laymen’s terms what each part does to help us get a better grasp on how the code is structured and why to structure it that way? Sometimes it seems like code is just flying past and we never really find out what it means. Also, I’m not sure how possible this is based on our time etc., but I’ve heard from other students that they wish there was more individual help time.  Not necessarily one-on-ones, but what I have found very helpful from other web classes in the Design department, is the teacher will do a lecture for part of the class, then give a kind of challenge/in class assignment, and help people as they run into problems. I’ve found this extremely helpful, because often people have very specific issues with coding, and if you are just learning the language you might not even know what to look up to try and solve it yourself. Sorry this paragraph was so long. 
+
+
+
+Grading Myself: 
+
+-Organization: 10%
+
+-Effort: 35%
+
+-Creativity: 15%
+
+-Skill: 25%
+
+-participation: 15%
