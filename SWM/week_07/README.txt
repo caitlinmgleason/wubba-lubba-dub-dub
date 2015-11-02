@@ -10,7 +10,7 @@ I spent more of my practice time this week creating a javascript project, hopefu
 -Is there a way to make a button clickable with different functions based on an if/then statement? I got mine to work, but this seems like it would be cleaner. 
 
 -If you can figure out why my “classic” translation only outputs the last word I would be very grateful. I and it working before as you can see here: 
-iam.colum.edu/student/caitlin.gleason/SWM/week_07/piglatinfix.html
+http://iam.colum.edu/students/caitlin.gleason/SWM/week_06/piglatinfix.html
 but somewhere along the way I broke it and after about an hour and a half I gave up. I know it’s something to do with the dialect selection, when I moved var dialect = … it started working again. 
 
 -I also put some notes in my code about things I was having trouble with. 

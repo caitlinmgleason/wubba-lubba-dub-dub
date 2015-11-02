@@ -45,7 +45,7 @@ button {
         <div style="display: table-cell; vertical-align: middle; text-align: center; margin: 0 auto;">
            <h1>
             <label>What dialect of Pig Latin?
-                <br /><select id="dialect">
+                <br /><select id="dialect" name="dialect">
                     <option value="classic">Classic</option>
                     <option value="lancashire">Lancashire</option>
                 </select>
@@ -119,11 +119,12 @@ var translateFunction = function () {
 					if (lastLetter == "?" || lastLetter == "." || lastLetter == "!") {
 					
 						var result = resultLetter + wordSplit[i].substring(2, wordSplit[i].length - 1) + firstLetter.toLowerCase() + "ay" + lastLetter + " ";
-					
+						
 					}
 				}
 				
 			}
+			
 		} 
 		
 		else if (dialect === "lancashire"){ 
@@ -141,7 +142,12 @@ var translateFunction = function () {
 
 button.addEventListener("click", translateFunction);
 	
-/**/
+/*button.addEventListener('click', function (evt) {
+	if (this.form.dialect.value =='classic) {
+		//do function
+	}else {
+		//do whatever 
+	}*/
 </script>
 
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<label>Enter a Number: 
+	<input id="number" type="text">
+</label>
+
+<button type="button" id="button"> Calculate!</button>
+
+<br />
+<br />
+<br />
+<br />
+
+<label> Enter a noun:
+	<input id="noun" type="text">
+</label> 
+<br />
+<br />
+<label> Enter an adjective:
+	<input id="adjective" type="text">
+</label> 
+<br />
+<br />
+<label> Enter a verb:
+	<input id="verb" type="text">
+</label> 
+<br />
+<br />
+<label> Enter an adverb:
+	<input id="adverb" type="text">
+</label> 
+<br />
+<br />
+<label> Enter a number:
+	<input id="number2" type="text">
+</label> 
+<br />
+<br />
+<button type="button" id="libbutton"> Concatenate dis bitch. </button>
+
+<script type="text/javascript">
+
+var calculateNumber = function () {
+	var input = document.getElementById("number").value;
+	var output = input * 7 * 1443; 
+	var button = document.getElementById("button");
+	
+	alert(output);
+}
+
+var madLib = function () {
+	var noun = document.getElementById("noun").value;
+	var adjective = document.getElementById("adjective").value;
+	var verb = document.getElementById("verb").value;
+	var adverb = document.getElementById("adverb").value;
+	var number2 = document.getElementById("number2").value;
+	var libbutton = document.getElementById("libbutton");
+	var libbed = number2.concat(" ", adjective, " ", noun, " ", verb, " ", adverb);
+	
+	alert(libbed);
+	
+}
+
+button.addEventListener("click", calculateNumber);
+
+libbutton.addEventListener("click", madLib);
+
+</script>
+</body>
+</html>
