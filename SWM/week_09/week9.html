@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Loop Examples</title>
+	<style type="text/css" media="screen">
+	body {
+		font-family:helvetica;
+	}
+	.console {
+		min-height:5em;
+		font-family:'Courier New';
+		color:#fff;
+		padding:1em;
+		background-color:#333;
+	}
+	.console > span {
+		display:block;
+		padding:0.25em;
+		border-bottom:1px dotted rgba(0,0,0,0.1);
+	}
+	</style>
+  </head>
+  <body>
+    <h1>I made a list of hobbits.</h1>
+	<pre class="console"></pre>
+    <script type="text/javascript">
+	
+	function printString(string_argument) {
+		var fake_console = document.querySelector('.console');
+		// an html span element
+		var span = document.createElement('span');
+		span.innerHTML = string_argument;
+		
+		fake_console.appendChild(span);
+	}
+	
+	
+	var num   = 0;
+	var limit = 100;
+	
+	while (num < limit ) {
+		num = num + 2;
+		console.log(num);
+	}
+	
+	var hobbits = ["Frodo", "Sam", "Merry", "Pippin", "Bilbo", "Gaffer", "Farmer Maggot", "Rosie", "Drogo", "Smeagol"];
+	
+	printString('the length of my things array: ' + hobbits.length);
+	
+	printString('---- Hobbits in a WHILE----');
+	
+	var i = 0;
+	while (hobbits[i]) {
+		printString(hobbits[i]);
+		i++
+	}
+	
+	
+	printString('---- Hobbits FOR you! ----');
+	for (var i = 0; i < hobbits.length; i++) {
+		if (hobbits[i] == 'Gaffer') {
+			continue;
+		} else if (hobbits[i] == 'Bilbo'){
+			printString('<span>I</span> love Bilbo!');
+		} else {
+		 	printString(hobbits[i]);
+		}
+	}
+	
+	
+	printString('---- CALLING all Hobbits ----');
+	var hobbits_are_great = function (hobbit_name, index) {
+		// hobbit_name is formerly known as hobbit[i]
+		if (hobbit_name == 'Rosie') {
+			return;
+		} else if (hobbit_name == 'Frodo'){
+			printString('Dead Weight');
+		} else {
+		 	printString(hobbit_name);
+		}
+	}
+	
+	hobbits.forEach(hobbits_are_great);
+    </script>
+  </body>
+</html>

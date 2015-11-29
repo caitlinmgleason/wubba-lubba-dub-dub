@@ -1,0 +1,519 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: 'Montserrat', sans-serif;
+	color:#666; 
+	overflow-x: hidden;
+}
+
+a {
+	color: white;
+	text-decoration: none;	
+}
+
+p {
+	line-height: 1.5em;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	display: table;
+}
+
+header:first-child {
+	position: absolute;
+}
+
+.headercenter {
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.headercenter h1, .headercenter h2 {
+	position: relative;
+	width: 100%;
+	text-transform: uppercase;
+	float: left;
+}
+
+.headercenter h1 {
+	font-size: 7em;
+    letter-spacing: .7em;
+	padding-left:.35em;
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.headercenter h2 {
+	letter-spacing: .1em;
+}
+
+.new-class {
+	background: green;
+}
+
+@keyframes turn1 {
+    0% {transform:rotate(360deg); opacity: 1;}
+    25% {transform: rotate(270deg); opacity: .5;}
+	50% {transform: rotate(180deg); opacity: 0;}
+	75% {transform: rotate(90deg); opacity: .5;}
+	100% {transform: rotate(0deg); opacity: 1;}
+}
+@keyframes turn2 {
+    0% {transform:rotate(360deg); opacity: 0;}
+    25% {transform: rotate(270deg); opacity: .5;}
+	50% {transform: rotate(180deg); opacity: 1;}
+	75% {transform: rotate(90deg); opacity: .5;}
+	100% {transform: rotate(0deg); opacity: 0;}
+}
+
+.intro header img:first-of-type, .intro header img:nth-child(2){
+    animation-name: turn1;
+    animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	width: 30vw;
+	position: relative;
+	margin-left: 35vw;
+	float: left;
+}
+.intro header img:nth-child(2){
+    animation-name: turn2;
+    margin-left: -30vw;	
+}
+
+@keyframes banckgroundGradient {
+    0% {background-image: url(img/gradbg1.png);}
+	50% {background-image: url(img/gradbg2.png);}
+	100% {background-image: url(img/gradbg1.png);}
+}
+
+.summary p:first-child {
+	background-size: cover;
+    width: 40%;
+    margin: 0;
+    margin-left: 5%;
+    padding: 6%;
+    font-size: 3em;
+    color: white;
+    float: left;
+	line-height: 1.3em;
+	animation-name: banckgroundGradient;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.summary p:last-child {
+	float: left;
+    width: 15%;
+    position: absolute;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 12em;
+    padding: 5% 5% 5% 20%;
+    border: #FF7A6B solid 2px;
+	font-size: 1.5em;
+	transition: all .75s ease-out;
+}
+
+.summary p:last-child a {
+	color: #FF7A6B;
+	text-decoration: none;
+	transition: all .75s ease-out;
+}
+
+.summary p:last-child:hover {
+	background:#FF7A6B;
+	color: white;
+}
+
+.summary p:last-child:hover a {
+	color:white;
+	cursor: pointer;
+}
+
+.summary p:last-child:hover a:hover {
+	color:#666;
+	cursor: pointer;
+}
+
+.design-selection img:first-of-type{
+	position: absolute;
+    margin-left: 10%;
+    width: 5%;
+    margin-top: -4%;
+}
+
+.design-selection {
+	clear: left;
+	margin-left: 5%;
+	width: 30%;
+	float: left;
+}
+
+.design-selection h3 {
+	width: 25vw;
+    background: #FF7A6B;
+	border: 1px #FF7A6B solid;
+    height: 20vw;
+    margin: 0;
+	line-height: 20vw;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.design-selection ul {
+	margin: 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.design-selection ul li{
+    width: 25vw;
+    height: 6vw;
+	overflow: hidden;
+	transition: all .75s ease-out;
+	color: white;
+	font-size: 1.5em;
+	transition: all .75s ease-out;
+}
+
+.design-selection ul li a{
+	transition: all .75s ease-out;
+}
+
+.design-selection ul li:first-child{
+	background: #FC897C;
+	border: 1px #FC897C solid;
+}
+
+.design-selection ul li:nth-child(2){
+	background: #FC9488;
+	border: 1px #FC9488 solid;
+}
+
+.design-selection ul li:nth-child(3){
+	background: #FC9F95;
+	border: 1px #FC9F95 solid;
+}
+
+.design-selection ul li:nth-child(4){
+	background: #FCABA2;
+	border: 1px #FCABA2 solid;
+}
+
+.design-selection ul li:nth-child(5) {
+	background: #FCC8C2;
+	color: #FF7A6B;
+	border: 1px #FCC8C2 solid;
+}
+
+.design-selection ul li:nth-child(6) {
+	background: #FCDAD7;
+	color: #FF7A6B;	
+	border: 1px #FCDAD7 solid;
+}
+
+.design-selection ul li:nth-child(7) {
+	background: #FCE8E6;
+	color: #FF7A6B;
+	border: 1px #FCE8E6 solid;
+}
+
+.design-selection ul li:nth-child(8){
+	background: #FAEFED;
+	color: #FF7A6B;
+	border: 1px #FAEFED solid;
+}
+.design-selection ul li:nth-child(8) a, .design-selection ul li:nth-child(7) a, .design-selection ul li:nth-child(6) a, .design-selection ul li:nth-child(5) a {
+	color: #FF7A6B;
+}
+
+.design-selection ul li a:first-child {
+	width: 100%;
+    display: block;
+	line-height: 6vw;
+}
+
+
+.design-selection ul li:hover{
+	color: #FF7A6B;
+	background: white;
+	border: 1px #FF7A6B solid;
+}
+
+.design-selection ul li:hover a {
+	color: #FF7A6B;
+	background: transparent;
+}
+
+.design-selection ul li:hover a:hover {
+	color: #666 !important;
+}
+
+.designs-expand {
+	height: 10vw !important;
+}
+
+.supporting {
+	width: 60%;
+	float: right;
+	margin-right: 5%;
+	margin-top: 5vw;
+}
+
+.supporting h3 {
+    font-size: 5em;
+    text-transform: uppercase;
+    margin: 0;
+    color: darkturquoise;	
+}
+
+.supporting div:nth-child(2n) h3 {
+	text-align: right;
+}
+
+@keyframes linkHover {
+    0% {background-color: transparent; padding: 0;}
+	25% {background-color: #FCABA2; padding: 0;}
+	100% {background-color: transparent;  padding: 20px 0;}
+}
+.supporting a {
+	color: darkturquoise;
+}
+
+.supporting a:hover {
+	animation-name: linkHover;
+	animation-duration: .5s;
+	animation-timing-function: linearr;
+}
+
+.preamble p {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.explanation p {
+	width: 90%;
+	float: right;
+}
+
+.requirements p {
+	width: 90%;
+	margin-left: 10%; 
+}
+
+@keyframes colorChange {
+    0% {color: #666; }
+	100% {color: #FCDAD7; }
+}
+
+.supporting p{
+	animation-name: colorChange;
+	animation-duration: .5s;
+	animation-delay: .5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+
+.supporting p:first-of-type {
+	animation-delay: 1s;
+}
+
+.supporting p:nth-of-type(2) {
+	animation-delay: 1.25s;
+}
+
+.supporting p:nth-of-type(3) {
+	animation-delay: 1.5s;
+}
+
+.supporting p:nth-of-type(4) {
+	animation-delay: 1.75s;
+}
+
+.supporting p:nth-of-type(5) {
+	animation-delay: 2s;
+}
+
+footer {
+	height: 10vw;
+    line-height: 10vw;
+    float: left;
+    position: relative;
+    clear: both;
+    width: 100%;
+	margin-top: 50px;
+}
+
+footer a {
+	width: 20%;
+    color: white;
+	font-size: 4em;
+	font-weight: 600;
+    display: block;
+    float: left;
+    text-align: center;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	position: absolute;
+	transition: all .75s ease-out;
+}
+
+footer a:hover {
+	color:#666; 
+	background: white !important;
+	border: 1px #3DFFA8 solid !important;
+}
+
+@keyframes move1 {
+    0% {margin-left: 0%; z-index: 5;}
+	10% {margin-left: 0%; z-index: 5;}
+	20% {margin-left: 80%; z-index: 5;}
+	30% {margin-left: 80%; z-index: 5;}
+	40% {margin-left: 60%;z-index: 1;}
+	50% {margin-left: 60%;z-index: 1;}
+	60% {margin-left: 40%;z-index: 1;}
+	70% {margin-left: 40%;z-index: 1;}
+	80% {margin-left: 20%;z-index: 1;}
+	90% {margin-left: 20%;z-index: 1;}
+	100% {margin-left: 0%; z-index: 5;}
+}
+
+@keyframes move2 {
+    0% {margin-left: 20%; zi-index: 1;}
+	10% {margin-left: 20%; z-index: 1;}
+	20% {margin-left: 0%; z-index: 5;}
+	30% {margin-left: 0%; z-index: 5;}
+	40% {margin-left: 80%; z-index: 5;}
+	50% {margin-left: 80%; z-index: 5;}
+	60% {margin-left: 60%;z-index: 1;}
+	70% {margin-left: 60%;z-index: 1;}
+	80% {margin-left: 40%;z-index: 1;}
+	90% {margin-left: 40%;z-index: 1;}
+	100% {margin-left: 20%;z-index: 1;}
+}
+
+@keyframes move3 {
+    0% {margin-left: 40%;z-index: 1;}
+	10% {margin-left: 40%;z-index: 1;}
+	20% {margin-left: 20%;z-index: 1;}
+	30% {margin-left: 20%;z-index: 1;}
+	40% {margin-left: 0%; z-index: 5;}
+	50% {margin-left: 0%; z-index: 5;}
+	60% {margin-left: 80%; z-index: 5;}
+	70% {margin-left: 80%; z-index: 5;}
+	80% {margin-left: 60%;z-index: 1;}
+	90% {margin-left: 60%;z-index: 1;}
+	100% {margin-left: 40%;z-index: 1;}
+}
+
+@keyframes move4 {
+    0% {margin-left: 60%;z-index: 1;}
+	10% {margin-left: 60%;z-index: 1;}
+	20% {margin-left: 40%;z-index: 1;}
+	30% {margin-left: 40%;z-index: 1;}
+	40% {margin-left: 20%;z-index: 1;}
+	50% {margin-left: 20%; z-index: 1;}
+	60% {margin-left: 0%; z-index: 5;}
+	70% {margin-left: 0%; z-index: 5;}
+	80% {margin-left: 80%; z-index: 5;}
+	90% {margin-left: 80%; z-index: 5;}
+	100% {margin-left: 60%; z-index: 1;}
+}
+
+@keyframes move5 {
+    0% {margin-left: 80%; z-index: 5;}
+	10% {margin-left: 80%; z-index: 5;}
+	20% {margin-left: 60%; z-index: 1;}
+	30% {margin-left: 60%; z-index: 1;}
+	40% {margin-left: 40%; z-index: 1;}
+	50% {margin-left: 40%; z-index: 1;}
+	60% {margin-left: 20%; z-index: 1;}
+	70% {margin-left: 20%; z-index: 1;}
+	80% {margin-left: 0%; z-index: 5;}
+	90% {margin-left: 0%; z-index: 5;}
+	100% {margin-left: 80%; z-index: 5;}
+}
+
+footer a:first-of-type{
+	animation-name: move1;
+	background: #3DFFA8;
+	border: 1px #3DFFA8 solid; 
+}
+
+footer a:nth-of-type(2){
+	animation-name: move2;
+	background: #60FCB6;
+	border: 1px #60FCB6 solid;
+}
+
+footer a:nth-of-type(3){
+	animation-name: move3;
+	background: #7DFFC4;
+	border: 1px #7DFFC4 solid;
+}
+
+footer a:nth-of-type(4){
+	animation-name: move4;
+	background: #95FCCE;
+	border: 1px #95FCCE solid;
+}
+
+footer a:nth-of-type(5){
+	animation-name: move5;
+	background: #B3FFDD;
+	border: 1px #B3FFDD solid;
+}
+
+
+
+.design-selection aside {
+	float: left;
+    margin-top: 8%;
+	box-sizing: border-box;
+    padding: 2.5%;
+    border: darkturquoise 2px solid;
+    position: absolute;
+	text-align: left;
+}
+
+.design-selection aside h3, .design-selection aside li:nth-of-type(1), .design-selection aside li:nth-of-type(2), .design-selection aside li:nth-of-type(3), .design-selection aside li:nth-of-type(4), .design-selection aside li:nth-of-type(5), .design-selection aside li a{
+	background: none;
+	color: #666 !important;
+	border: none;
+	text-align: left;
+	width: 20vw !important;
+}
+
+.design-selection aside h3 {
+	line-height: 2vw;
+    height: 2vw;
+    font-size: 1.5em;
+    text-transform: uppercase;
+	margin: 20px 0 10px 0;
+	border-bottom: darkturquoise 1px solid;
+}
+
+.design-selection aside li a, .design-selection aside li  {
+	line-height: 1.5em !important;
+	height: 1.5em !important;
+	font-size: 1.1em !important;
+	transition: all .75s ease-out;
+}
+
+.design-selection aside li a:hover, .design-selection ul li:hover a:hover {
+	color: darkturquoise !important;
+}

@@ -1,0 +1,5 @@
+# Week 9
+
+## Assignment
+
+I did the assignment quickly this week, and I’m mostly caught up on README.txt files etc, so I continued to work on my gibberish generator. Unfortunately I haven’t made it that far. Spent about three hours trying to get my ubbi dubbi translate function to work the way I want. I finally got it so that if the word ends in a silent “e” then the function ignores that letter, but after rejoicing I realized it only works if you only put in one word. So I realized I needed to split up the sentence THEN each word, which I think I’ve achieved, but now the for loop that once worked doesn’t run the function within the outer for loop. What’s weird is I added a log and alert function to identify if it was running the loop, and it is (an alert shows for each letter processed), but the function inside of the loop isn’t running! UGH. 

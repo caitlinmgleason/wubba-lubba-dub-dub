@@ -151,24 +151,52 @@ var lancashireFunction = function () {
 var ubbidubbiFunction = function () {
 			var word = document.getElementById("translate").value;
 			//split input string into separate letters
-			var letterSplit = word.split("");
-						
-			for (var i = 0; i < letterSplit.length; i++) {
+			
+			var wordSplit = word.split(" ");
+			
+			for (j = 0; j < wordSplit.length; j++) {
 				
-				/*below I tried to make a conditional that you ad "ub" if the item is a vowel that IS NOT preceded
-				by another vowel. I treid to write a function for the vowel, but I couldn't quite seem to get it working
-				Another caveat was that it seems to add "ub" before checking if the item is preceeded by a vowel, so
-				I had to say if preceded by by ub+the vowel. All of it seems messy and I'd be glad for another way */				
-				if (["a","e","i","o","u"].indexOf(letterSplit[i]) > -1 && letterSplit[i-1] != "ubo" && letterSplit[i-1] != "uba" && letterSplit[i-1] != "ube" && letterSplit[i-1] != "ubi" && letterSplit[i-1] != "ubu") {
-					letterSplit[i] = "ub" + letterSplit[i].toLowerCase();
-				}
-				else if (["A","E","I","O","U"].indexOf(letterSplit[i]) > -1 && letterSplit[i-1] != "Ubo" && letterSplit[i-1] != "Uba" && letterSplit[i-1] != "Ube" && letterSplit[i-1] != "Ubi" && letterSplit[i-1] != "Ubu") {
-					letterSplit[i] = "Ub" + letterSplit[i].toLowerCase();
+				var letterSplit = wordSplit[j].split("");
+				
+				var lastLetter = wordSplit[j].charAt(wordSplit[j].length-1);
+				
+				var ubbiThis = function() {
+					/*below I tried to make a conditional that you ad "ub" if the item is a vowel that IS NOT preceded
+					by another vowel. I treid to write a function for the vowel, but I couldn't quite seem to get it working
+					Another caveat was that it seems to add "ub" before checking if the item is preceeded by a vowel, so
+					I had to say if preceded by by ub+the vowel. All of it seems messy and I'd be glad for another way  --- regular expression */
+					if (["a","e","i","o","u"].indexOf(letterSplit[i]) > -1 && letterSplit[i-1] != "ubo" && letterSplit[i-1] != "uba" && letterSplit[i-1] != "ube" && letterSplit[i-1] != "ubi" && letterSplit[i-1] != "ubu") {
+						letterSplit[i] = "ub" + letterSplit[i].toLowerCase();
+						
+					} else if (["A","E","I","O","U"].indexOf(letterSplit[i]) > -1 && letterSplit[i-1] != "Ubo" && letterSplit[i-1] != "Uba" && letterSplit[i-1] != "Ube" && letterSplit[i-1] != "Ubi" && letterSplit[i-1] != "Ubu") {
+						letterSplit[i] = "Ub" + letterSplit[i].toLowerCase();
+						
+					}
+				
+				};
+				
+				//I feel like this is kind of ratchet
+				if (lastLetter == "e") {
+					console.log(letterSplit);
+					for (var i = 0; i < letterSplit.length-1; i++) {
+						alert("letter")
+						
+						ubbiThis();
+					}	
+				
+				} else {
+					console.log(letterSplit);
+					for (var i = 0; i < letterSplit.length; i++) {
+						
+						ubbiThis();
+					}
 				}
 			
-					
-				document.getElementById("output").textContent = letterSplit.join("") + " ";
-			}		
+			document.getElementById("output").textContent = wordSplit.join(" ");
+			
+			}
+			
+			
 };
 	
 button.addEventListener('click', function () {
